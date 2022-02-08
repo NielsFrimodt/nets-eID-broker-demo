@@ -213,7 +213,8 @@
 					]
 				}
 			},
-			"response": [],
+			"response": []
+		},
 		{
 			"name": "CPR Match",
 			"protocolProfileBehavior": {
@@ -261,7 +262,6 @@
 				}
 			},
 			"response": []
-		}
 		}
 	],
 	"event": [
