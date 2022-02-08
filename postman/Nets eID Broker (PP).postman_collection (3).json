@@ -4,6 +4,7 @@
 		"name": "Nets eID Broker (PP)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
+	
 	"item": [
 		{
 			"name": "Get Discovery info",
@@ -212,7 +213,55 @@
 					]
 				}
 			},
+			"response": [],
+		{
+			"name": "CPR Match",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjA0ODA1OEJCNTlGNEQzMDA3MDQ1ODk2RkQ0ODhDRTgxRjRFQjQ5MjMiLCJ0eXAiOiJhdCtqd3QifQ.eyJpc3MiOiJodHRwczovL3BwLm5ldHNlaWRicm9rZXIuZGsvb3AiLCJuYmYiOjE2NDMzNzA5MTEsImlhdCI6MTY0MzM3MDkxMSwiZXhwIjoxNjQzMzc0NTExLCJzY29wZSI6WyJvcGVuaWQiLCJtaXRpZCJdLCJhbXIiOlsiY29kZV9hcHAiXSwiY2xpZW50X2lkIjoiZmZhMTA5YmEtOTk5YS00ZTI0LWEzZWItM2IxMjVkMmI0MjFiIiwic3ViIjoiMDQzYmY5ZTgtNjQzYi00YWU5LTkxNzQtMWU3YjcyMjQ3OGY3IiwiYXV0aF90aW1lIjoxNjQzMzcwODg3LCJpZHAiOiJtaXRpZCIsImFjciI6Imh0dHBzOi8vZGF0YS5nb3YuZGsvY29uY2VwdC9jb3JlL25zaXMvU3Vic3RhbnRpYWwiLCJuZWJfc2lkIjoiNDQzMzMzYjAtMjU2Zi00MDk2LTg0YTktOGZiN2RjNzE0MjA2IiwianRpIjoiMEFGNzU2NUNDOEE5N0M2QTVCNUIxMTMxNjcwMzI4NjIifQ.NmM6jA3NwI8Cc5Drskv3-S5oY-V41KbWOaXUYnmU-H9eAFU1fMcUjyTnA20lrmCyg7lISYOICUmdP4SW95-motbjAfB4SOBapVtW463z-h7dfk_H994Ptak4qh4z-YcOIk7RUa4FXMsYnvsYa6VvXP638K74NqA_1a_XSdHruhBrBBPj7jSOX6UA7dyFSqN7ixq2WUr8VjayIc0sGJKo3Lsl8QJ_O8M3RybwXzfTqvwdx9T5DpMgHg5UlxVvNriV-CIJK_V2Ng4GqEssxSYIVOmTrFUHsF64c6xyiOVXOajAb1qjkt8feGUkfqiGbh5jD19fJfqsdPZMIrtb5o_Fig"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cpr\": \"1909009193\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{authority_url}}/api/v1/mitid/matchCpr",
+					"protocol": "https",
+					"host": [
+						"{{authority_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"mitid",
+						"matchCpr"
+					]
+				}
+			},
 			"response": []
+		}
 		}
 	],
 	"event": [
